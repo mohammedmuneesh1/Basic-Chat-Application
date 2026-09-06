@@ -1,0 +1,36 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+
+@import "tailwindcss";
+
+/* @layer base {
+  * {
+    @apply p-0 m-0 box-border;
+  }
+} */
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @variant dark (&:where([data-theme="dark"], [data-theme="dark"] *)); */
+/* @variant dark (.dark &); */
+
+
+/* @theme{
+        ---color-primary:#3b82f6;
+        --color-primary-dark:#0d0d0d;
+} */
+
+
+
+/* THIS FILE STRICTLY FOR THE TAILWIND CSS IMPLEMENTATION START */
+
+
+  
+
+
+/* THIS FILE STRICTLY FOR THE TAILWIND CSS IMPLEMENTATION START */

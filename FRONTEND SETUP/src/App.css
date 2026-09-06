@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.App{
+    /* margin-top: 0px !important; */
+    min-height:100vh;
+    display: flex;
+    max-width:100%;
+    background-image: url('../images/background/background.png');
+    background-size: scale(1.1);
+    background-size: cover;
+    color:black;
+    font-size:18px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    font-size: 16px; /* or 14px, depending on preference */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .App {
+    font-size: 14px;
+  }
+}
+
+
+
+@layer utilities{
+    /* .basicTextSize{
+        @apply text-xs sm:text-sm;
+    } */
+}
