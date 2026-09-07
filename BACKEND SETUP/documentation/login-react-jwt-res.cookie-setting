@@ -1,0 +1,16 @@
+  const jwtToken = createJWT({ userId: 123 });
+
+  res.cookie('token', jwtToken, {
+    httpOnly: true,          // Prevent access from JavaScript
+    secure: process.env.NODE_ENV === 'production',  // HTTPS in prod
+    sameSite: 'strict',      // Prevent CSRF
+    maxAge: 15 * 60 * 1000,  // 15 minutes
+  });
+
+  res.status(200).json({ message: 'Logged in successfully' });
+});
+
+
+
+
+await axios.post('https://your-backend.com/api/login', { username, password }, { withCredentials: true });
